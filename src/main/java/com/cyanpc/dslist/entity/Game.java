@@ -1,4 +1,4 @@
-package com.cyanpc.dslist.entities;
+package com.cyanpc.dslist.entity;
 
 import jakarta.persistence.*;
 
@@ -20,6 +20,8 @@ public class Game {
     private String shortDescription;
     @Column(length =  9999)
     private String longDescription;
+
+    public Game() {}
 
     public Game(Long id, String title, Integer releaseYear, String genre, String platforms, Double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
